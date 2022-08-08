@@ -2,22 +2,25 @@ import {
   calculatorPlus,
   calculatorMinus,
   calculatorDivision,
-  calculatorMultication,
+  calculatorMultiplication,
 } from "./calculator";
+
+
 
 export function customChecker(
   firstNumber: number,
   secondNumber: number,
   result: number,
-  sign: string
-) {
+  sign: '+' | '-' | '/' | '*' )
+{
+  let res = new calculatorMultiplication(firstNumber, secondNumber);
   if (
     (sign === "+" && calculatorPlus(firstNumber, secondNumber) === result) ||
     (sign === "-" && calculatorMinus(firstNumber, secondNumber) === result) ||
     (sign === "/" && calculatorDivision(firstNumber, secondNumber) === result) ||
-    (sign === "*" && calculatorMultication(firstNumber, secondNumber) === result)) {
+    (sign === "*" && res.multiplication() === result)) {
     console.log("Test passed!");
-    } else {
+  } else {
     console.log("Test failed!");
-    }
+  }
 }
