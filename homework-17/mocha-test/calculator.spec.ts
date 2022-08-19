@@ -1,10 +1,9 @@
 import assert from "assert";
 import { expect } from "chai";
 import { Calculator } from "../src/calculator";
+import { VALIDATION_ERROR } from "../src/constant"
 
 let calculator: any;
-
-const VALIDATION_ERROR = "The result is not as expected!";
 
 describe("Tests for plus operations", () => {
   before("Initialize class instance", () => {

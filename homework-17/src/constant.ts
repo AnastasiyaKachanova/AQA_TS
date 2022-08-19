@@ -1,0 +1,1 @@
+export const VALIDATION_ERROR = "The result is not as expected!";
