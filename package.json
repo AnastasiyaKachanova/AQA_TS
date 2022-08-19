@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "hw16": "ts-node ./homework-16/hw16.ts",
-    "hw17-test-mocha": "mocha",
-    "hw17-test-jest": "jest"
+    "hw17-test-mocha": "mocha --config='./homework-17/.mocharc.json'",
+    "hw17-test-jest": "jest --config='./homework-17/jest.config.js'"
   },
   "author": "",
   "license": "ISC",
